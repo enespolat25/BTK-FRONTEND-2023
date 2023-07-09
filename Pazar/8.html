@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ile Çalışmak</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="border-radius: 10px;background-color: blueviolet;
+     text-align: center;padding:20px;">Java Script ile
+        Çalışmak</h2>
+    <button onclick="document.getElementById('demo1').innerHTML = 
+    'Aşağıda tarih bilgisi var';
+    document.getElementById('demo3').innerHTML = 
+    'Sizi seviyorum';
+    alert('hem de karşılıksız')" type="button">Tarih ve Zamanı Göster</button>
+    <p id="demo1">tarih ve zaman</p>
+    <p id="demo2">data</p>
+    <p id="demo3">data</p>
+
+    <script>
+        document.getElementById("demo2").innerHTML = Date();
+
+        document.getElementById("demo2").style.fontSize = "25px";
+        document.getElementById("demo1").style.color = "red";
+        document.getElementById("demo3").style.backgroundColor = "yellow";
+
+
+    </script>
+
+</body>
+
+</html>
